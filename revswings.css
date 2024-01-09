@@ -755,7 +755,7 @@ html{
         /* Media Queries for Mobile Responsiveness */
         @media only screen and (max-width: 768px) {
             .responsive{
-            width: 50%;
+            width: 100%;
             margin: 6px 0;
         }
             
