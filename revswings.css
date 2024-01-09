@@ -80,6 +80,9 @@ header .navbar a:hover{
 .container span{
     padding-top: 8px;
 }
+.container .row-1 .col-2 p{
+    font-size: 14px;
+}
 
 .row-1{
     display: flex;
