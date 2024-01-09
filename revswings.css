@@ -754,6 +754,11 @@ html{
         
         /* Media Queries for Mobile Responsiveness */
         @media only screen and (max-width: 768px) {
+            .responsive{
+            width: 50%;
+            margin: 6px 0;
+        }
+            
             header .navbar {
                 padding: 1rem 0;
                 display: block;
@@ -817,4 +822,10 @@ html{
             }
         }
         
+    }
+ @media only screen and (max-width: 500px){
+        .responsive{
+            width: 100%;
+           
+        }
     }
