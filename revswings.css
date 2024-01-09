@@ -73,6 +73,9 @@ header .navbar a:hover{
     padding-right: 25px;
     background: black;
 }
+.container .row-1 .col-2 .auto-input{
+    font-size: 8px;
+}
 
 .row-1{
     display: flex;
