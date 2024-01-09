@@ -511,15 +511,300 @@ html{
     }
 
     @media only screen and (max-width: 700px){
-        .responsive{
-            width: 50%;
-            margin: 6px 0;
+       
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
         }
-    }
-
-    @media only screen and (max-width: 500px){
-        .responsive{
+        
+        html, body {
+            height: 100%;
+        }
+        
+        body {
+            font-family: 'Poppins', sans-serif;
+        }
+        
+        html {
+            font-size: 62.5%;
+            overflow-x: hidden;
+            scroll-padding-top: 6.5rem;
+            scroll-behavior: smooth;
+        }
+        
+        section {
+            padding: 3rem 5%;
+        }
+        
+        header {
+            position: fixed;
+            top: 0; left: 0; right: 0;
+            z-index: 10000;
+            background: black;
+            padding: 1.5rem 5%;
+            display: flex;
+            align-content: center;
+            justify-content: space-between;
+        }
+        
+        header .logo {
+            font-size: 2rem;
+        }
+        
+        header .navbar {
+            position: absolute;
+            top: 100%;
+            left: 0;
+            right: 0;
+            background: black;
+            padding: 6px 0;
+            clip-path: polygon(0 0, 100% 0, 0 0);
+            display: none;
+        }
+        
+        header .navbar.active {
+            display: block;
+        }
+        
+        header .navbar a {
+            display: block;
+            background: white;
+            border-radius: 4px;
+            color: black;
+            margin: 1rem;
+            padding: 6px 3px;
+            font-size: 14px;
+            text-align: center;
+        }
+        
+        .header-icons {
+            display: flex;
+            align-items: center;
+        }
+        
+        .header-icons a {
+            margin-left: 10px;
+        }
+        
+        .container {
+            max-width: 100%;
+            margin: auto;
+            padding-left: 5%;
+            padding-right: 5%;
+            background: black;
+        }
+        
+        .row-1 {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+        }
+        
+        .col-2 {
+            flex-basis: 100%;
+            min-width: 0;
+        }
+        
+        .col-2 img {
+            max-width: 100%;
+            padding: 5%;
+            border-radius: 16px;
+        }
+        
+        .col-2 h1 {
+            font-size: 2rem;
+            line-height: 2.4rem;
+            margin: 20px 0;
+            color: goldenrod;
+        }
+        
+        .textbox a {
+            margin-top: 15px;
+            font-size: 12px;
+        }
+        
+        .textbox .btn {
+            font-size: 14px;
+        }
+        
+        h1 {
+            height: auto;
+            margin-bottom: 40px;
+        }
+        
+        p {
+            margin-top: 40px;
+            padding-top: 6px;
+            font-size: 16px;
+            color: white;
+        }
+        
+        .welcome {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(18rem, auto));
+            gap: 2rem;
+            background: white;
+        }
+        
+        .welcome p {
+            color: #000;
+            font-size: 16px;
+        }
+        
+        .welcome-img img {
+            margin-top: 10px;
+            margin-left: 5%;
+            border-radius: 16px;
+            width: 90%;
+        }
+        
+        .welcome-text span {
+            font-size: 18px;
+        }
+        
+        .welcome-text h2 {
+            font-size: 16px;
+        }
+        
+        .welcome-text p {
+            font-size: 14px;
+            margin: 1rem 0 1rem;
+        }
+        
+        .welcome-text .btn {
+            font-size: 14px;
+            margin-top: 15px;
+        }
+        
+        .about {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(18rem, auto));
+            gap: 2rem;
+            background: white;
+        }
+        
+        .welcome-text p {
+            font-size: 14px;
+        }
+        
+        hr {
             width: 100%;
-           
+            color: goldenrod;
         }
+        
+        .box p {
+            font-size: 14px;
+            padding-top: 0;
+            padding-bottom: 4px;
+        }
+        
+        .why-us {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(240px, auto));
+            gap: 2rem;
+        }
+        
+        h3 {
+            font-size: 16px;
+            padding-bottom: 0;
+            padding-top: 8px;
+            text-align: center;
+        }
+        
+        .why-us .box {
+            padding: 15px;
+            background: rgb(228, 225, 225);
+            box-shadow: rgb(155, 150, 150);
+            text-align: center;
+        }
+        
+        .why-us img {
+            width: 70%;
+            border-radius: 8px;
+        }
+        
+        .footer {
+            display: flex;
+            justify-content: space-between;
+            padding: 10px 5%;
+            background: black;
+            color: white;
+        }
+        
+        .footer p {
+            margin-top: 10px;
+            font-size: 14px;
+        }
+        
+        .footer img {
+            max-width: 100px;
+            margin-bottom: 10px;
+        }
+        
+        /* Media Queries for Mobile Responsiveness */
+        @media only screen and (max-width: 768px) {
+            header .navbar {
+                padding: 1rem 0;
+                display: block;
+            }
+        
+            header .navbar a {
+                margin: 0.5rem;
+                padding: 8px 15px;
+                text-align: center;
+            }
+        
+            .header-icons {
+                display: none;
+            }
+        
+            .row-1 {
+                flex-direction: column;
+                align-items: center;
+            }
+        
+            .col-2 h1 {
+                font-size: 1.8rem;
+                line-height: 2.2rem;
+                margin: 20px 0;
+            }
+        
+            .welcome,
+            .about,
+            .why-us {
+                grid-template-columns: 1fr;
+            }
+        
+            .welcome-img img {
+                margin-top: 10px;
+                margin-left: 0;
+            }
+        
+            .welcome-text span {
+                font-size: 16px;
+            }
+        
+            .welcome-text h2 {
+                font-size: 14px;
+            }
+        
+            .welcome-text p,
+            .welcome-text .btn,
+            .box p,
+            .why-us h3 {
+                font-size: 12px;
+            }
+        
+            .footer {
+                flex-direction: column;
+                align-items: center;
+                text-align: center;
+            }
+        
+            .footer img {
+                margin-bottom: 0;
+            }
+        }
+        
     }
