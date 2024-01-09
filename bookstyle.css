@@ -1,0 +1,224 @@
+
+  @import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@600&family=Tinos&display=swap');
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html, body{
+    height: 100%;
+    background: rgb(44, 42, 42);
+}
+body{
+    font-family: 'Poppins', sans-serif;
+}
+
+html{
+    font-size: 62.5%;
+    overflow-x: hidden;
+    scroll-padding-top: 6.5rem;
+    scroll-behavior: smooth;
+}
+header{
+    position: fixed;
+    top: 0; left: 0; right: 0;
+    z-index: 10000;
+    background: black;
+    padding: 2rem 9%;
+    display: flex;
+    align-content: center;
+    justify-content: space-between;
+    
+}
+header .logo{
+    font-size: 2.5rem;
+    color: #f7a52a;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+s{
+    color: aliceblue;
+    text-decoration: none;
+}
+
+header .navbar a{
+    color: white;
+    font-size: 18px;
+    margin-left: 20px;
+    text-decoration: none;
+    display: inline-block;
+    align-items: center;
+
+}
+.textbox .btn{
+    background: goldenrod;
+    color: #000;
+    width: 28px;
+    font-weight: 600;
+    text-decoration: none;
+    font-size: 16px;
+    }
+.textbox a{
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    border-radius: 10px;
+}
+    .btn:hover{
+        background: #5c0c02c7;
+    }
+
+header .navbar a:hover{
+    color: #f7a52a;
+}
+#menu-bar{
+    font-size: 24px;
+    color: #555;
+    border-radius: 8px;
+    border: 2px solid #555;
+    padding: 10px 14px;
+    display: none;
+}
+.container{
+    max-width: 100%;
+    margin: auto;
+    padding-left: 25px;
+    padding-right: 25px;
+    background: black;
+}
+/*form starts here*/
+.formstart{
+    padding-top: 270px;
+    background: rgb(44, 42, 42);
+    max-width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.form{
+    
+    width: 700px;
+    height: 700px;
+}
+.form-text{
+    text-align: center;
+    margin: 40px 0;
+    font-family: 'Akaya Telivigala', cursive;
+}
+.main-form div{
+    margin: 10px 20px;
+    display: inline-block;
+    width: 300px;
+    font-family: 'Akaya Telivigala', cursive;
+}
+.main-form div input{
+   width: 100%;
+   font-family: 'Akaya Telivigala', cursive;
+   background: none;
+   border: 1px solid goldenrod;
+   font-size: 20px;
+   color: #fff;
+   outline: none;
+   padding: 3px 0 3px 10px;
+   margin-top: 10px;
+
+}
+
+.main-form div span{
+    width: 100%;
+    font-family: 'Akaya Telivigala', cursive;
+    background: none;
+    font-size: 25px;
+    color: #fff;
+    outline: none;
+ 
+ }
+ h1{
+    color: white;
+    font-size: 30px;
+ }
+ p{
+    color: goldenrod;
+    font-size: 16px;
+ }
+ 
+#btn{
+    text-align: center;
+    margin: 20px auto;
+    width: 26%;
+    font-family: 'Akaya Telivigala', cursive;
+    background-color: goldenrod;
+    border-radius: 8px;
+    outline: none;
+    font-size: 20px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* media queries */
+
+@media (max-width:1200px){
+
+    
+    html{
+        font-size: 55%;
+    }
+    }
+    
+    @media (max-width:991px){
+    
+        header{
+            padding: 2rem 4%;
+    
+        }
+        .container{
+            padding: 3rem, 4%;
+        }
+        
+    }
+    
+    @media (max-width:768px){
+    
+        #menu-bar{
+            display: block;
+        }
+        header .navbar{
+            position: absolute;
+            top: 100%; left: 0; right: 0;
+            background: black;
+            padding: 6px 0;
+            clip-path: polygon(0 0, 100% 0, 0 0);
+        }
+    
+        header .navbar.nav-toggle{
+            clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+        }
+
+        header .navbar a{
+            display: block;
+            background: white;
+            border-radius: 4px;
+            color: black;
+            margin: 1.5rem;
+            padding: 6px 3px;
+            font-size: 18px;
+        }
+    }
