@@ -73,8 +73,8 @@ header .navbar a:hover{
     padding-right: 25px;
     background: black;
 }
-.container .row-1 .col-2 .auto-input{
-    font-size: 24px;
+.container .row-1 .col-2 .auto-input span{
+    font-size: 18px;
     padding-top: 8px;
 }
 .container span{
